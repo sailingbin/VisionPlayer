@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- 眼睛外轮廓 (椭圆形) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,42 
+                         Q 34,54 54,66 
+                         Q 74,54 54,42 Z"
+        android:fillAlpha="0.9" />
+    
+    <!-- 眼睛内部圆形 (瞳孔背景) -->
+    <path
+        android:fillColor="#E3F2FD"
+        android:pathData="M54,54m-10,0a10,10 0,1 1,20 0a10,10 0,1 1,-20 0" />
+    
+    <!-- 播放按钮 (三角形) - 整合在瞳孔中 -->
+    <path
+        android:fillColor="#1565C0"
+        android:pathData="M51,49 L51,59 L59,54 Z" />
+    
+    <!-- 眼睛高光 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M56,51m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"
+        android:fillAlpha="0.8" />
+    
+    <!-- 文字 V - Vision -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 38,30 L 42,30 L 46,40 L 50,30 L 54,30 L 48,44 L 44,44 Z"
+        android:fillAlpha="0.95" />
+    
+    <!-- 文字 P - Play -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 58,64 L 62,64 L 62,78 L 58,78 Z
+                         M 62,64 L 68,64 Q 72,64 72,68 Q 72,72 68,72 L 62,72"
+        android:strokeWidth="0"
+        android:fillAlpha="0.95" />
+</vector>

@@ -1,0 +1,34 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- 红色渐变背景 -->
+    <path
+        android:pathData="M0,0 L120,0 L120,120 L0,120 Z">
+        <aapt:attr xmlns:aapt="http://schemas.android.com/aapt" name="android:fillColor">
+            <gradient
+                android:startY="0"
+                android:endY="120"
+                android:startColor="#E53935"
+                android:endColor="#C62828"
+                android:type="linear"/>
+        </aapt:attr>
+    </path>
+
+    <!-- 电视图标 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,35 L90,35 C93.3,35 96,37.7 96,41 L96,75 C96,78.3 93.3,81 90,81 L30,81 C26.7,81 24,78.3 24,75 L24,41 C24,37.7 26.7,35 30,35 Z M30,39 L90,39 L90,75 L30,75 Z"/>
+
+    <!-- 电视支架 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,81 L70,81 L70,85 L50,85 Z"/>
+
+    <!-- CCTV文字 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M35,95 L38,95 L38,105 L35,105 Z M42,95 L45,95 L45,105 L42,105 Z M49,95 L52,95 L52,105 L49,105 Z M56,95 L59,95 L59,105 L56,105 Z M63,95 L66,95 L63,100 L66,105 L63,105 L60,100 L63,95 Z M70,95 L73,95 L73,100 L78,100 L78,105 L70,105 Z M82,95 L85,95 L85,105 L82,105 Z"/>
+</vector>

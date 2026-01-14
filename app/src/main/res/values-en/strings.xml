@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VisionPlayer</string>
+    <string name="open_file">Open File</string>
+    <string name="open_local_file">Open Local File</string>
+    <string name="browse_videos_on_your_device">Browse videos on your device</string>
+    <string name="enter_network_stream_url">Enter network stream URL</string>
+    <string name="supported_protocols_hint">Supports HTTP, HTTPS, RTMP, RTMPS, RTSP and more</string>
+
+    <!-- Main page related -->
+    <string name="welcome_to_vision_player">Welcome to VisionPlayer</string>
+    <string name="choose_how_to_watch">Choose how to watch</string>
+    <string name="quick_play">Quick Play</string>
+    <string name="quick_play_description">Quickly select a video to play</string>
+    <string name="feature_icon">Feature Icon</string>
+    <string name="navigate">Navigate</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="privacy_policy_content">
+        Welcome to VisionPlayer! We respect and protect your privacy.
+        \n\n**Data Collection &amp; Usage**
+        \n1. **Local Files**: When you play local videos, the app only accesses files locally on your device. No video content or path information is uploaded.
+        \n2. **Network Streams**: When you play network streams, the app accesses the URLs you enter, but does not record or share these addresses.
+        \n3. **Third-party Services (Firebase)**: To optimize app experience and fix bugs, we have integrated Google Firebase services:
+        \n- **Crashlytics**: Collects stack traces, device models, and OS versions when the app crashes to help us fix bugs.
+        \n- **Performance Monitoring**: Collects app start time, network request latency, and screen rendering performance to optimize speed.
+        \n- **Device Identifiers**: Firebase may use anonymous installation IDs to distinguish between different devices for crash frequency statistics.
+        \n\n**Permissions Usage**
+        \n- **Storage Permission**: Used to access video files on your device.
+        \n- **Internet Permission**: Used to play network video streams and upload anonymous performance reports.
+        \n\n**Data Security**
+        \nAll performance and crash data we collect is anonymous and does not contain your name, email, or any personally identifiable information.
+        \n\n**Contact Us**
+        \nIf you have any questions about this privacy policy, please contact us through the feedback channel of the app store.
+    </string>
+
+    <string name="home_title">Home</string>
+    <string name="check_for_updates">Check for Updates</string>
+    <string name="you_are_up_to_date">You are up to date</string>
+    <string name="new_version_found_mock">New version found! (mock)</string>
+
+    <!-- Version Update -->
+    <string name="checking_for_updates">Checking for updates…</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="new_version_found">New version %s found</string>
+    <string name="later">Later</string>
+    <string name="update_now">Update Now</string>
+
+    <!-- Feature entries -->
+    <string name="local_videos">Local Videos</string>
+    <string name="local_videos_description">Browse all videos on your device</string>
+    <string name="single_video">Single Video</string>
+    <string name="single_video_description">Select a single video file to play</string>
+    <string name="remote_video">Remote Playback</string>
+    <string name="remote_video_description">Enter a network address to play</string>
+    <string name="live_tv">Live TV</string>
+    <string name="live_tv_description">Watch live TV channels</string>
+
+    <!-- Permission -->
+    <string name="permission_rationale">Storage permission is required to access video files</string>
+    <string name="error_permission_denied">Storage permission denied, unable to access video files.</string>
+    <string name="accuracy_label">Accuracy: %1$d%%</string>
+    <string name="no_video_to_play">No video to play.</string>
+
+    <!-- Remote Video -->
+    <string name="localhost_warning">⚠️ Localhost address detected!\n\nOn Android devices, localhost refers to the device itself and cannot access services on your computer.\n\nPlease use your computer\'s LAN IP address, for example:\nrtsp://192.168.1.100:8554/mystream</string>
+    <string name="live_stream">Live Stream</string>
+
+    <!-- Add Channel -->
+    <string name="add_channel">Add Channel</string>
+    <string name="add_channel_title">Add Live Source</string>
+    <string name="channel_name">Channel Name</string>
+    <string name="channel_url">Stream URL</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_channel_confirm">Are you sure you want to delete this channel?</string>
+    <string name="delete">Delete</string>
+    <string name="channel_name_hint">e.g. CCTV-1</string>
+    <string name="channel_url_hint">Enter stream URL, supports .m3u8</string>
+
+    <!-- Empty State & Error -->
+    <string name="empty_local_videos_desc">No video files found on your device</string>
+    <string name="empty_live_tv_desc">No live channels yet. Click the top right to add your first channel</string>
+    <string name="empty_retry">Retry</string>
+    <string name="error_unable_to_connect">Unable to connect to server. Please check your network or URL</string>
+    <string name="add_success">Added successfully</string>
+    <string name="please_input_complete_info">Please enter complete information</string>
+    <string name="delete_success">Deleted successfully</string>
+    <string name="privacy_policy_url">https://sailingbin.github.io/VisionPlayer-Privacy/</string>
+    <string name="view_online_privacy_policy">View Online Detail Version</string>
+</resources>

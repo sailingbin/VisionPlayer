@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material Design 3 Dark Theme Colors -->
+
+    <!-- Primary colors - 更新为蓝紫色调 -->
+    <color name="md_theme_dark_primary">#8FA5FF</color>          <!-- 柔和蓝紫光 -->
+    <color name="md_theme_dark_onPrimary">#2A1A5E</color>
+    <color name="md_theme_dark_primaryContainer">#7E57C2</color> <!-- 深紫色容器 -->
+    <color name="md_theme_dark_onPrimaryContainer">#D6E3FF</color>
+
+    <!-- 新增简化主色命名 -->
+    <color name="primary">#8FA5FF</color>
+    <color name="primary_variant">#7E57C2</color>
+    <color name="on_primary">#2A1A5E</color>
+
+    <!-- Secondary colors -->
+    <color name="md_theme_dark_secondary">#BCC7DB</color>
+    <color name="md_theme_dark_onSecondary">#26304B</color>
+    <color name="md_theme_dark_secondaryContainer">#3D4762</color>
+    <color name="md_theme_dark_onSecondaryContainer">#D8E3F8</color>
+
+    <color name="secondary">#11CDEF</color>
+    <color name="on_secondary">#000000</color>
+
+    <!-- Surface colors - 深色主题 -->
+    <color name="md_theme_dark_surface">#121212</color>          <!-- 纯黑背景 -->
+    <color name="md_theme_dark_onSurface">#E2E2E5</color>
+    <color name="md_theme_dark_surfaceVariant">#1E1E1E</color>
+    <color name="md_theme_dark_onSurfaceVariant">#C3C7CF</color>
+
+    <color name="surface">#121212</color>
+    <color name="surface_variant">#1E1E1E</color>
+    <color name="on_surface">#E2E2E5</color>
+    <color name="outline">#424242</color>
+
+    <!-- Background -->
+    <color name="md_theme_dark_background">#121212</color>
+    <color name="md_theme_dark_onBackground">#E2E2E5</color>
+
+    <!-- Error -->
+    <color name="md_theme_dark_error">#FFB4AB</color>
+    <color name="md_theme_dark_onError">#690005</color>
+    <color name="md_theme_dark_errorContainer">#93000A</color>
+    <color name="md_theme_dark_onErrorContainer">#FFB4AB</color>
+
+    <color name="error">#FFB4AB</color>
+
+</resources>

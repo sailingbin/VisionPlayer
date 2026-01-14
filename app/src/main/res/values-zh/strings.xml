@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">VisionPlayer</string>
+    <string name="open_file">打开文件</string>
+    <string name="open_local_file">打开本地文件</string>
+    <string name="browse_videos_on_your_device">浏览设备中的视频</string>
+    <string name="enter_network_stream_url">输入网络流地址</string>
+    <string name="supported_protocols_hint">支持 HTTP、HTTPS、RTMP、RTMPS、RTSP 等协议</string>
+
+    <!-- 主页面相关 -->
+    <string name="welcome_to_vision_player">欢迎使用 VisionPlayer</string>
+    <string name="choose_how_to_watch">选择您的观看方式</string>
+    <string name="quick_play">快速播放</string>
+    <string name="quick_play_description">快速选择视频播放</string>
+    <string name="feature_icon">功能图标</string>
+    <string name="navigate">导航</string>
+    <string name="settings">设置</string>
+    <string name="about">关于</string>
+    <string name="privacy_policy">隐私政策</string>
+    <string name="privacy_policy_content">
+        欢迎使用 VisionPlayer！我们尊重并保护您的隐私。
+        \n\n**数据收集与使用**
+        \n1. **本地文件**: 当您播放本地视频时，应用仅在设备本地访问文件，不会上传任何视频内容或路径信息。
+        \n2. **网络流**: 当您播放网络流时，应用会访问您输入的URL，但不会记录或分享这些地址。
+        \n3. **第三方服务 (Firebase)**: 为了优化应用体验和修复错误，我们集成了 Google Firebase 服务：
+        \n- **Crashlytics**: 收集应用崩溃时的堆栈轨迹、设备型号和操作系统版本，用于修复程序错误。
+        \n- **Performance Monitoring**: 收集应用启动时间、网络请求延迟和屏幕渲染性能，用于优化运行速度。
+        \n- **设备标识符**: Firebase 可能会使用匿名安装 ID 来区分不同的设备，以便统计崩溃频率。
+        \n\n**权限使用**
+        \n- **存储权限**: 用于访问您设备上的视频文件。
+        \n- **网络权限**: 用于播放网络视频流及上传匿名性能报告。
+        \n\n**数据安全**
+        \n我们收集的所有性能和崩溃数据均为匿名，不包含您的姓名、邮箱或任何个人身份信息。
+        \n\n**联系我们**
+        \n如果您对本隐私政策有任何疑问，请通过应用商店的反馈渠道与我们联系。
+    </string>
+
+    <string name="home_title">主页</string>
+    <string name="check_for_updates">检查更新</string>
+    <string name="you_are_up_to_date">您已经是最新版本</string>
+    <string name="new_version_found_mock">发现新版本！(模拟)</string>
+
+    <!-- 版本更新 -->
+    <string name="checking_for_updates">正在检查更新…</string>
+    <string name="please_wait">请稍候…</string>
+    <string name="new_version_found">发现新版本 %s</string>
+    <string name="later">稍后</string>
+    <string name="update_now">立即更新</string>
+
+    <!-- 功能入口 -->
+    <string name="local_videos">本地视频</string>
+    <string name="local_videos_description">浏览设备上的所有视频</string>
+    <string name="single_video">单个视频</string>
+    <string name="single_video_description">选择一个视频文件播放</string>
+    <string name="remote_video">远端播放</string>
+    <string name="remote_video_description">输入网络地址播放</string>
+    <string name="live_tv">电视直播</string>
+    <string name="live_tv_description">观看电视频道直播</string>
+
+    <!-- Permission -->
+    <string name="permission_rationale">需要存储权限来访问视频文件</string>
+    <string name="error_permission_denied">存储权限被拒绝，无法访问视频文件。</string>
+    <string name="accuracy_label">准确率：%1$d%%</string>
+    <string name="no_video_to_play">没有可播放的视频。</string>
+
+    <!-- Remote Video -->
+    <string name="localhost_warning">⚠️ 检测到localhost地址！\n\n在Android设备上，localhost指向设备本身，无法访问电脑上的服务。\n\n请使用电脑的局域网IP地址，例如：\nrtsp://192.168.1.100:8554/mystream</string>
+    <string name="live_stream">直播流</string>
+
+    <!-- Add Channel -->
+    <string name="add_channel">添加频道</string>
+    <string name="add_channel_title">添加直播源</string>
+    <string name="channel_name">频道名称</string>
+    <string name="channel_url">直播流地址</string>
+    <string name="add">添加</string>
+    <string name="cancel">取消</string>
+    <string name="delete_channel_confirm">确定要删除这个频道吗？</string>
+    <string name="delete">删除</string>
+    <string name="channel_name_hint">例如：CCTV-1</string>
+    <string name="channel_url_hint">请输入直播源地址，支持 .m3u8</string>
+
+    <!-- Empty State & Error -->
+    <string name="empty_local_videos_desc">您的设备中没有找到视频文件</string>
+    <string name="empty_live_tv_desc">还没有直播频道，点击右上角添加您的第一个频道吧</string>
+    <string name="empty_retry">重试</string>
+    <string name="error_unable_to_connect">无法连接到服务器，请检查网络或地址是否正确</string>
+    <string name="add_success">添加成功</string>
+    <string name="please_input_complete_info">请输入完整信息</string>
+    <string name="delete_success">删除成功</string>
+    <string name="privacy_policy_url">https://sailingbin.github.io/VisionPlayer-Privacy/</string>
+    <string name="view_online_privacy_policy">查看在线详细版本</string>
+</resources>

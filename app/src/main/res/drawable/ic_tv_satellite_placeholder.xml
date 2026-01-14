@@ -1,0 +1,44 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- 蓝色渐变背景 -->
+    <path
+        android:pathData="M0,0 L120,0 L120,120 L0,120 Z">
+        <aapt:attr xmlns:aapt="http://schemas.android.com/aapt" name="android:fillColor">
+            <gradient
+                android:startY="0"
+                android:endY="120"
+                android:startColor="#1E88E5"
+                android:endColor="#1565C0"
+                android:type="linear"/>
+        </aapt:attr>
+    </path>
+
+    <!-- 卫星天线图标 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M60,30 C48.95,30 40,38.95 40,50 C40,55.52 42.38,60.49 46.13,64 L50,60.13 C47.19,57.56 45.45,53.96 45.45,50 C45.45,41.96 51.96,35.45 60,35.45 C68.04,35.45 74.55,41.96 74.55,50 C74.55,53.96 72.81,57.56 70,60.13 L73.87,64 C77.62,60.49 80,55.52 80,50 C80,38.95 71.05,30 60,30 Z"/>
+
+    <!-- 内圈卫星波纹 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M60,40 C54.48,40 50,44.48 50,50 C50,52.76 51.14,55.24 53,57 L56.5,53.5 C55.57,52.43 55,51.02 55,50 C55,47.24 57.24,45 60,45 C62.76,45 65,47.24 65,50 C65,51.02 64.43,52.43 63.5,53.5 L67,57 C68.86,55.24 70,52.76 70,50 C70,44.48 65.52,40 60,40 Z"/>
+
+    <!-- 中心点 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M60,47 C58.34,47 57,48.34 57,50 C57,51.66 58.34,53 60,53 C61.66,53 63,51.66 63,50 C63,48.34 61.66,47 60,47 Z"/>
+
+    <!-- 电视屏幕 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,65 L90,65 C93.3,65 96,67.7 96,71 L96,85 C96,88.3 93.3,91 90,91 L30,91 C26.7,91 24,88.3 24,85 L24,71 C24,67.7 26.7,65 30,65 Z M30,69 L90,69 L90,85 L30,85 Z"/>
+
+    <!-- 电视支架 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,91 L70,91 L70,95 L50,95 Z"/>
+</vector>

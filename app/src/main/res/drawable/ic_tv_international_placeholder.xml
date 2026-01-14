@@ -1,0 +1,39 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- 绿色渐变背景 -->
+    <path
+        android:pathData="M0,0 L120,0 L120,120 L0,120 Z">
+        <aapt:attr xmlns:aapt="http://schemas.android.com/aapt" name="android:fillColor">
+            <gradient
+                android:startY="0"
+                android:endY="120"
+                android:startColor="#43A047"
+                android:endColor="#2E7D32"
+                android:type="linear"/>
+        </aapt:attr>
+    </path>
+
+    <!-- 地球图标 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M60,30 C43.43,30 30,43.43 30,60 C30,76.57 43.43,90 60,90 C76.57,90 90,76.57 90,60 C90,43.43 76.57,30 60,30 Z M60,34 C74.36,34 86,45.64 86,60 C86,74.36 74.36,86 60,86 C45.64,86 34,74.36 34,60 C34,45.64 45.64,34 60,34 Z"/>
+
+    <!-- 经线 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M60,34 L60,86 M50,34.5 C50,34.5 45,45 45,60 C45,75 50,85.5 50,85.5 M70,34.5 C70,34.5 75,45 75,60 C75,75 70,85.5 70,85.5"/>
+
+    <!-- 纬线 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,60 L86,60 M37,50 L83,50 M37,70 L83,70"/>
+
+    <!-- 播放按钮 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M52,53 L52,67 L67,60 Z"/>
+</vector>

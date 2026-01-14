@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "736626528836",
+    "project_id": "visionplayer-e300b",
+    "storage_bucket": "visionplayer-e300b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736626528836:android:35c940914334e9dc07e211",
+        "android_client_info": {
+          "package_name": "com.live.visionplay"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCDfyfn3meia14Hq8jb096AspZzZ6t3Ac"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
