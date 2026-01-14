@@ -1,9 +1,8 @@
 {
-  "versionCode": 2,
-  "versionName": "1.0.1",
+  "versionCode": 1,
+  "versionName": "1.0.0",
   "releaseNotes": [
-    "修复了“关于”页面在特定情况下会崩溃的问题。",
-    "统一了“关于”页面的标题栏样式。",
+    "初始VisionPlayer版本。",
     "增加了动态版本检查更新功能。"
   ],
   "downloadUrl": "https://github.com/sailingbin/VisionPlayer/releases/latest"
