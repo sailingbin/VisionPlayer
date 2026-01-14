@@ -30,8 +30,25 @@ android {
         }
     }
 
+    signingConfigs {
+        create("release") {
+            val storeFile = project.findProperty("RELEASE_STORE_FILE")
+            val storePassword = project.findProperty("RELEASE_STORE_PASSWORD")
+            val keyAlias = project.findProperty("RELEASE_KEY_ALIAS")
+            val keyPassword = project.findProperty("RELEASE_KEY_PASSWORD")
+
+            if (storeFile != null && storePassword != null && keyAlias != null && keyPassword != null) {
+                this.storeFile = file(storeFile.toString())
+                this.storePassword = storePassword.toString()
+                this.keyAlias = keyAlias.toString()
+                this.keyPassword = keyPassword.toString()
+            }
+        }
+    }
+
     buildTypes {
         release {
+            signingConfig = signingConfigs.getByName("release")
             // APK瘦身优化：启用代码混淆和资源压缩
             isMinifyEnabled = true           // 启用ProGuard/R8代码混淆
             isShrinkResources = true         // 启用资源压缩
