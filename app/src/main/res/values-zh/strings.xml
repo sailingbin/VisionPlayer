@@ -88,4 +88,11 @@
     <string name="delete_success">删除成功</string>
     <string name="privacy_policy_url">https://sailingbin.github.io/VisionPlayer-Privacy/</string>
     <string name="view_online_privacy_policy">查看在线详细版本</string>
+
+    <!-- Edit Channel -->
+    <string name="edit_channel_title">编辑直播源</string>
+    <string name="channel_logo_url">频道图标地址</string>
+    <string name="channel_logo_url_hint">请输入频道图标地址</string>
+    <string name="save">保存</string>
+    <string name="update_success">更新成功</string>
 </resources>

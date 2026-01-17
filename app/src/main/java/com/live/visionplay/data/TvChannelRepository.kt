@@ -54,6 +54,15 @@ object TvChannelRepository {
         saveChannels(currentList)
     }
 
+    fun updateChannel(channel: TvChannel) {
+        val currentList = getChannels().toMutableList()
+        val index = currentList.indexOfFirst { it.id == channel.id }
+        if (index != -1) {
+            currentList[index] = channel
+            saveChannels(currentList)
+        }
+    }
+
     private fun saveChannels(channels: List<TvChannel>) {
         val prefs = preferences ?: return
         try {
@@ -90,15 +99,7 @@ object TvChannelRepository {
     }
 
     private fun getDefaultChannels(): List<TvChannel> {
-        return listOf(
-            // 默认只保留第一个有效的测试源
-            TvChannel(
-                id = "dw_en",
-                name = "DW English",
-                streamUrl = "https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8",
-                logoUrl = null
-            )
-        )
+        return emptyList()
     }
 
 

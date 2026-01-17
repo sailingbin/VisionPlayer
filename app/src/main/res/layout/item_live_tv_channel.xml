@@ -13,7 +13,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="140dp">
+        android:layout_height="wrap_content">
 
         <!-- Logo区域背景渐变 -->
         <View
@@ -36,6 +36,7 @@
             app:layout_constraintBottom_toTopOf="@id/channel_name"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintDimensionRatio="16:9"
             tools:src="@color/purple_200" />
 
         <!-- 直播标识 -->

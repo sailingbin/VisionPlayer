@@ -66,7 +66,7 @@ class LiveTvActivity : AppCompatActivity() {
         liveTvAdapter = LiveTvAdapter(
             emptyList(),
             onClick = { channel -> playChannel(channel) },
-            onLongClick = { channel -> showDeleteConfirmDialog(channel) }
+            onLongClick = { channel -> showEditChannelDialog(channel) }
         )
         binding.channelsRecyclerView.apply {
             layoutManager = GridLayoutManager(this@LiveTvActivity, 3)
@@ -103,6 +103,7 @@ class LiveTvActivity : AppCompatActivity() {
         val dialogView = layoutInflater.inflate(R.layout.dialog_add_channel, null)
         val nameInput = dialogView.findViewById<TextInputEditText>(R.id.channel_name_input)
         val urlInput = dialogView.findViewById<TextInputEditText>(R.id.channel_url_input)
+        val logoUrlInput = dialogView.findViewById<TextInputEditText>(R.id.channel_logo_url_input)
 
         AlertDialog.Builder(this)
             .setTitle(R.string.add_channel_title)
@@ -110,13 +111,14 @@ class LiveTvActivity : AppCompatActivity() {
             .setPositiveButton(R.string.add) { _, _ ->
                 val name = nameInput.text.toString().trim()
                 val url = urlInput.text.toString().trim()
+                val logoUrl = logoUrlInput.text.toString().trim()
 
                 if (name.isNotEmpty() && url.isNotEmpty()) {
                     val newChannel = TvChannel(
                         id = UUID.randomUUID().toString(),
                         name = name,
                         streamUrl = url,
-                        logoUrl = null
+                        logoUrl = if (logoUrl.isNotBlank()) logoUrl else null
                     )
                     TvChannelRepository.addChannel(newChannel)
                     loadChannels()
@@ -124,6 +126,44 @@ class LiveTvActivity : AppCompatActivity() {
                 } else {
                     Toast.makeText(this, R.string.please_input_complete_info, Toast.LENGTH_SHORT).show()
                 }
+            }
+            .setNegativeButton(R.string.cancel, null)
+            .show()
+    }
+
+    private fun showEditChannelDialog(channel: TvChannel) {
+        val dialogView = layoutInflater.inflate(R.layout.dialog_edit_channel, null)
+        val nameInput = dialogView.findViewById<TextInputEditText>(R.id.channel_name_input)
+        val urlInput = dialogView.findViewById<TextInputEditText>(R.id.channel_url_input)
+        val logoUrlInput = dialogView.findViewById<TextInputEditText>(R.id.channel_logo_url_input)
+
+        nameInput.setText(channel.name)
+        urlInput.setText(channel.streamUrl)
+        logoUrlInput.setText(channel.logoUrl)
+
+        AlertDialog.Builder(this)
+            .setTitle(R.string.edit_channel_title)
+            .setView(dialogView)
+            .setPositiveButton(R.string.save) { _, _ ->
+                val name = nameInput.text.toString().trim()
+                val url = urlInput.text.toString().trim()
+                val logoUrl = logoUrlInput.text.toString().trim()
+
+                if (name.isNotEmpty() && url.isNotEmpty()) {
+                    val updatedChannel = channel.copy(
+                        name = name,
+                        streamUrl = url,
+                        logoUrl = logoUrl
+                    )
+                    TvChannelRepository.updateChannel(updatedChannel)
+                    loadChannels()
+                    Toast.makeText(this, R.string.update_success, Toast.LENGTH_SHORT).show()
+                } else {
+                    Toast.makeText(this, R.string.please_input_complete_info, Toast.LENGTH_SHORT).show()
+                }
+            }
+            .setNeutralButton(R.string.delete) { _, _ ->
+                showDeleteConfirmDialog(channel)
             }
             .setNegativeButton(R.string.cancel, null)
             .show()

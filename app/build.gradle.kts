@@ -101,7 +101,7 @@ android {
 }
 
 dependencies {
-    implementation("com.live.visionplay:player-core:1.0.6")
+    implementation("com.live.visionplay:player-core:1.0.7")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

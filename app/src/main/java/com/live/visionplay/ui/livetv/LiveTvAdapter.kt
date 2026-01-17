@@ -78,11 +78,15 @@ class LiveTvAdapter(
                 }
             }
 
-            // 使用Coil加载频道logo，失败时显示对应的默认缩略图
-            logo.load(channel.logoUrl) {
-                crossfade(true)
-                placeholder(placeholderDrawable)
-                error(placeholderDrawable)
+            // 优先加载 logoUrl，如果为空则使用默认占位图
+            if (channel.logoUrl.isNullOrBlank()) {
+                logo.setImageResource(placeholderDrawable)
+            } else {
+                logo.load(channel.logoUrl) {
+                    crossfade(true)
+                    placeholder(placeholderDrawable)
+                    error(placeholderDrawable)
+                }
             }
         }
     }
